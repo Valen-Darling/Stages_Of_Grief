@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Stages of Grief | Virtual Art Exhibition</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+
+    /* GENERAL SETTINGS */
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      min-height:100vh;
+      color:white;
+      font-family:'Cormorant Garamond',serif;
+      overflow-x:hidden;
+
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(0,0,0,0.05) 0%,
+          rgba(0,0,0,0.25) 45%,
+          rgba(0,0,0,0.65) 75%,
+          rgba(0,0,0,0.9) 100%
+        ),
+        url("Website Images/foggy nature.jpg")
+        center top / cover fixed no-repeat;
+    }
+
+    /* HOMEPAGE */
+
+    .homepage{
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      padding:60px 20px 100px;
+    }
+
+    /* TITLE CONTAINER */
+
+    .title-container{
+      width:100%;
+      text-align:center;
+      opacity:0;
+      animation:fadeIn 1.2s ease-out forwards;
+      margin-bottom:75px;
+    }
+
+    /* MAIN TITLE - PURE WHITE */
+
+    .main-title{
+      font-family:'Great Vibes',cursive;
+      font-size:clamp(4rem,9vw,9rem);
+      font-weight:400;
+      letter-spacing:2px;
+      line-height:1.4;
+      color:#ffffff;
+      text-shadow:0 0 15px rgba(255,255,255,0.15);
+    }
+
+    /* REPEATING TITLE EFFECT */
+
+    .repeat-title{
+      font-family:'Great Vibes',cursive;
+      font-size:clamp(4rem,9vw,9rem);
+      font-weight:400;
+      letter-spacing:2px;
+      line-height:0.85;
+    }
+
+    .repeat-title:nth-child(2){
+      color:#cccccc;
+    }
+
+    .repeat-title:nth-child(3){
+      color:#999999;
+    }
+
+    .repeat-title:nth-child(4){
+      color:#555555;
+    }
+
+    .repeat-title:nth-child(5){
+      color:#000000;
+    }
+
+    /* PRESS STATEMENT */
+
+    .press-section{
+      width:100%;
+      max-width:850px;
+      padding:50px;
+
+      background:rgba(0,0,0,0.65);
+      border:1px solid rgba(255,255,255,0.15);
+      backdrop-filter:blur(8px);
+
+      opacity:0;
+      animation:fadeIn 1.2s ease-out forwards;
+    }
+
+    .press-text{
+      font-family:'Cormorant Garamond',serif;
+      font-size:1.3rem;
+      line-height:1.9;
+      color:#eeeeee;
+      text-align:left;
+    }
+
+    .press-text p{
+      margin-bottom:25px;
+    }
+
+    .press-text p:last-child{
+      margin-bottom:0;
+    }
+
+    /* FADE-IN ANIMATION */
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(20px);
+      }
+
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    /* MOBILE RESPONSIVENESS */
+
+    @media(max-width:700px){
+
+      .homepage{
+        padding:45px 15px 70px;
+      }
+
+      .main-title,
+      .repeat-title{
+        font-size:clamp(3rem,11vw,5rem);
+        letter-spacing:1px;
+      }
+
+      .title-container{
+        margin-bottom:50px;
+      }
+
+      .press-section{
+        padding:30px 22px;
+      }
+
+      .press-text{
+        font-size:1.15rem;
+        line-height:1.8;
+      }
+
+      body{
+        background-attachment:scroll;
+      }
+    }
+
+    /* ACCESSIBILITY */
+
+    @media(prefers-reduced-motion:reduce){
+      html{
+        scroll-behavior:auto;
+      }
+
+      .title-container,
+      .press-section{
+        animation:none;
+        opacity:1;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <main class="homepage">
+
+    <!-- EXHIBITION TITLE -->
+
+    <div class="title-container">
+
+      <h1 class="main-title">
+        Stages of Grief
+      </h1>
+
+      <div class="repeat-title" aria-hidden="true">
+        Stages of Grief
+      </div>
+
+      <div class="repeat-title" aria-hidden="true">
+        Stages of Grief
+      </div>
+
+      <div class="repeat-title" aria-hidden="true">
+        Stages of Grief
+      </div>
+
+      <div class="repeat-title" aria-hidden="true">
+        Stages of Grief
+      </div>
+
+    </div>
+
+    <!-- PRESS STATEMENT WITHOUT HEADING -->
+
+    <section class="press-section" id="press">
+
+      <div class="press-text">
+
+        <p>
+          <em>Stages of Grief</em> is an exhibition that explores the range of ways artists represent loss, pain, and remembrance through their creativity. Curated by Marie Pacis, it features famous artists such as Frida Kahlo, Ilya Repin, Yayoi Kusama, and Vincent van Gogh, as well as Jozef Israëls, Kay WalkingStick, Maxim Vorobiev, and Patricia Belli.
+        </p>
+
+        <p>
+          Grief is often associated with depression, and it is a common assumption that it can be easily overcome with enough time and the right resources, but this does not consider the intense impact it can have on an individual. Through these works, this exhibition considers grief as an experience that does not follow a fixed or universal sequence. We examine how these artists transform difficult experiences into visual forms of emotions.
+        </p>
+
+        <p>
+          This production grows out of the curator’s personal experience of losing their mother at eleven years old. Inspired by Jozef Israëls’ <em>The Last Breath</em>, she became interested in examining the diverse ways artists represent grief. This primary work depicts a scene of mourning and innocence. Frida Kahlo’s <em>The Wounded Deer</em> expresses grief through symbolic transformation, representing herself as a human-deer hybrid that is injured by arrows. <em>Sorrowing Old Man (At Eternity’s Gate)</em> by Vincent van Gogh conveys emotional distress through the old man’s hunched posture and muted colors. Ilya Repin’s <em>Ivan the Terrible and His Son Ivan</em> focuses on portraying grief through guilt and remorse. Maxim Vorobiev’s <em>Oak Fractured by Lightning</em> uses the destruction of a tree as a metaphor for the sudden impact of losing someone. Altogether, these pieces demonstrate how some artists choose to represent grief through the human figure or symbolic imagery.
+        </p>
+
+        <p>
+          Other works in the exhibition extend beyond traditional art forms. <em>Chandelier of Grief</em> by Yayoi Kusama uses mirrors and repeated light to suggest that beauty and sadness can exist at the same time. The illumination that reflects across the room offers the idea that hope can still remain even in periods of darkness. Patricia Belli’s <em>Maraña (Tangled)</em> addresses ecological grief, bringing to light the fear of future generations that will face the consequences of climate change caused by pollution. <em>Tears</em> by Kay WalkingStick combines personal and collective forms of grief by incorporating the death of her husband and the historical pain experienced by Indigenous communities.
+        </p>
+
+        <p>
+          Through paintings and installations, <em>Stages of Grief</em> indicates that grief does not follow one predictable sequence or that it can be overcome within a specific amount of time. Instead, it is presented as a feeling in which you can experience sadness, anger, guilt, and hope, all at once.
+        </p>
+
+        <p>
+          By placing different forms of depicting grief alongside one another, the exhibition emphasizes how it is a shared human experience. It offers viewers reassurance, serving as a reminder that they are never alone in their grief, even if it feels isolating.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
