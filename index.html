@@ -7,11 +7,11 @@
 
   <title>Stages of Grief | Virtual Art Exhibition</title>
 
-  <!-- Google Fonts -->
+  <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
 
@@ -25,6 +25,7 @@
 
     html{
       scroll-behavior:smooth;
+      scroll-padding-top:90px;
     }
 
     body{
@@ -33,6 +34,7 @@
       font-family:'Cormorant Garamond',serif;
       overflow-x:hidden;
 
+      /* ORIGINAL FOGGY FOREST BACKGROUND */
       background:
         linear-gradient(
           to bottom,
@@ -43,6 +45,40 @@
         ),
         url("Website Images/foggy nature.jpg")
         center top / cover fixed no-repeat;
+    }
+
+    /* NAVIGATION */
+
+    .top-nav{
+      position:sticky;
+      top:0;
+      z-index:100;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:45px;
+      flex-wrap:wrap;
+
+      width:100%;
+      padding:18px 20px;
+
+      background:rgba(0,0,0,0.55);
+      border-bottom:1px solid rgba(255,255,255,0.2);
+      backdrop-filter:blur(10px);
+    }
+
+    .top-nav a{
+      color:white;
+      font-family:'Cormorant Garamond',serif;
+      font-size:1.5rem;
+      text-decoration:none;
+      letter-spacing:1px;
+      transition:color 0.3s ease;
+    }
+
+    .top-nav a:hover{
+      color:#cccccc;
     }
 
     /* HOMEPAGE */
@@ -134,6 +170,180 @@
       margin-bottom:0;
     }
 
+    /* ARTWORKS SECTION */
+
+    .artworks-section{
+      width:100%;
+      padding:100px 35px;
+
+      background:
+        linear-gradient(
+          rgba(0,0,0,0.35),
+          rgba(0,0,0,0.55)
+        ),
+        url("Website Images/foggy nature_2.jpg")
+        center center / cover no-repeat;
+    }
+
+    .section-title{
+      font-family:'Great Vibes',cursive;
+      font-size:clamp(4rem,9vw,8rem);
+      font-weight:400;
+      text-align:center;
+      margin-bottom:25px;
+    }
+
+    .audio-instruction{
+      font-size:1.6rem;
+      font-weight:700;
+      text-align:center;
+      margin-bottom:15px;
+    }
+
+    .audio-description{
+      max-width:750px;
+      margin:0 auto 25px;
+      text-align:center;
+      font-size:1.4rem;
+      line-height:1.7;
+      color:#eeeeee;
+    }
+
+    /* AUDIO PLAYER */
+
+    .music-player{
+      text-align:center;
+      margin-bottom:90px;
+    }
+
+    .music-player button{
+      padding:12px 25px;
+      font-family:'Cormorant Garamond',serif;
+      font-size:1.3rem;
+      color:white;
+      background:rgba(0,0,0,0.5);
+      border:1px solid rgba(255,255,255,0.6);
+      cursor:pointer;
+      transition:0.3s ease;
+    }
+
+    .music-player button:hover{
+      background:rgba(255,255,255,0.15);
+    }
+
+    /* ARTIST GALLERY */
+
+    .artist-row{
+      width:100%;
+      max-width:1200px;
+      margin:0 auto 100px;
+
+      display:grid;
+      grid-template-columns:1fr 1.4fr;
+      gap:45px;
+      align-items:center;
+
+      padding:35px;
+      background:rgba(0,0,0,0.55);
+      border:1px solid rgba(255,255,255,0.12);
+    }
+
+    .artist-row.reverse{
+      direction:rtl;
+    }
+
+    .artist-row.reverse > *{
+      direction:ltr;
+    }
+
+    .artist-information{
+      text-align:left;
+    }
+
+    .artist-information h3{
+      font-family:'Great Vibes',cursive;
+      font-size:3.5rem;
+      font-weight:400;
+      margin-bottom:25px;
+    }
+
+    .artist-information h4{
+      font-size:1.7rem;
+      margin-bottom:12px;
+    }
+
+    .artwork-details{
+      font-size:1.1rem;
+      color:#cccccc;
+      margin-bottom:25px;
+    }
+
+    .artist-description{
+      font-size:1.3rem;
+      line-height:1.8;
+      font-style:italic;
+    }
+
+    .artist-images{
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      gap:20px;
+    }
+
+    .painting{
+      width:70%;
+      height:auto;
+      object-fit:contain;
+      border:1px solid rgba(255,255,255,0.25);
+    }
+
+    .artist-portrait{
+      width:25%;
+      height:auto;
+      object-fit:contain;
+      border:1px solid rgba(255,255,255,0.25);
+    }
+
+    /* ABOUT SECTION */
+
+    .about-section{
+      width:100%;
+      padding:100px 25px;
+
+      background:
+        linear-gradient(
+          rgba(0,0,0,0.15),
+          rgba(0,0,0,0.35)
+        ),
+        url("Website Images/foggy nature_3.jpg")
+        center center / cover no-repeat;
+    }
+
+    .about-title{
+      font-family:'Great Vibes',cursive;
+      font-size:clamp(4rem,9vw,8rem);
+      font-weight:400;
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .about-text{
+      max-width:850px;
+      margin:auto;
+      padding:45px;
+
+      background:rgba(0,0,0,0.65);
+      border:1px solid rgba(255,255,255,0.15);
+
+      font-size:1.3rem;
+      line-height:1.9;
+    }
+
+    .about-text p{
+      margin-bottom:25px;
+    }
+
     /* FADE-IN ANIMATION */
 
     @keyframes fadeIn{
@@ -150,7 +360,7 @@
 
     /* MOBILE RESPONSIVENESS */
 
-    @media(max-width:700px){
+    @media(max-width:900px){
 
       .homepage{
         padding:45px 15px 70px;
@@ -159,20 +369,33 @@
       .main-title,
       .repeat-title{
         font-size:clamp(3rem,11vw,5rem);
-        letter-spacing:1px;
-      }
-
-      .title-container{
-        margin-bottom:50px;
       }
 
       .press-section{
         padding:30px 22px;
       }
 
-      .press-text{
-        font-size:1.15rem;
-        line-height:1.8;
+      .artworks-section{
+        padding:60px 20px;
+      }
+
+      .artist-row,
+      .artist-row.reverse{
+        grid-template-columns:1fr;
+        direction:ltr;
+        padding:25px;
+      }
+
+      .artist-information{
+        text-align:center;
+      }
+
+      .artist-images{
+        gap:12px;
+      }
+
+      .about-text{
+        padding:25px;
       }
 
       body{
@@ -183,6 +406,7 @@
     /* ACCESSIBILITY */
 
     @media(prefers-reduced-motion:reduce){
+
       html{
         scroll-behavior:auto;
       }
@@ -199,62 +423,201 @@
 
 <body>
 
-  <main class="homepage">
+  <!-- NAVIGATION -->
 
-    <!-- EXHIBITION TITLE -->
+  <nav class="top-nav" aria-label="Exhibition navigation">
+    <a href="#home">Home</a>
+    <a href="#artworks">Artworks</a>
+    <a href="#about">About</a>
+  </nav>
 
-    <div class="title-container">
+  <main>
 
-      <h1 class="main-title">
-        Stages of Grief
-      </h1>
+    <!-- HOMEPAGE -->
 
-      <div class="repeat-title" aria-hidden="true">
-        Stages of Grief
+    <section class="homepage" id="home">
+
+      <!-- EXHIBITION TITLE -->
+
+      <div class="title-container">
+
+        <h1 class="main-title">
+          Stages of Grief
+        </h1>
+
+        <div class="repeat-title" aria-hidden="true">
+          Stages of Grief
+        </div>
+
+        <div class="repeat-title" aria-hidden="true">
+          Stages of Grief
+        </div>
+
+        <div class="repeat-title" aria-hidden="true">
+          Stages of Grief
+        </div>
+
+        <div class="repeat-title" aria-hidden="true">
+          Stages of Grief
+        </div>
+
       </div>
 
-      <div class="repeat-title" aria-hidden="true">
-        Stages of Grief
+      <!-- PRESS STATEMENT -->
+
+      <section class="press-section" id="press">
+
+        <div class="press-text">
+
+          <p>
+            <em>Stages of Grief</em> is an exhibition that explores the range of ways artists represent loss, pain, and remembrance through their creativity. Curated by Marie Pacis, it features famous artists such as Frida Kahlo, Ilya Repin, Yayoi Kusama, and Vincent van Gogh, as well as Jozef Israëls, Kay WalkingStick, Maxim Vorobiev, and Patricia Belli.
+          </p>
+
+          <p>
+            Grief is often associated with depression, and it is a common assumption that it can be easily overcome with enough time and the right resources, but this does not consider the intense impact it can have on an individual. Through these works, this exhibition considers grief as an experience that does not follow a fixed or universal sequence. We examine how these artists transform difficult experiences into visual forms of emotions.
+          </p>
+
+          <p>
+            This production grows out of the curator’s personal experience of losing their mother at eleven years old. Inspired by Jozef Israëls’ <em>The Last Breath</em>, she became interested in examining the diverse ways artists represent grief. This primary work depicts a scene of mourning and innocence. Frida Kahlo’s <em>The Wounded Deer</em> expresses grief through symbolic transformation, representing herself as a human-deer hybrid that is injured by arrows. <em>Sorrowing Old Man (At Eternity’s Gate)</em> by Vincent van Gogh conveys emotional distress through the old man’s hunched posture and muted colors. Ilya Repin’s <em>Ivan the Terrible and His Son Ivan</em> focuses on portraying grief through guilt and remorse. Maxim Vorobiev’s <em>Oak Fractured by Lightning</em> uses the destruction of a tree as a metaphor for the sudden impact of losing someone. Altogether, these pieces demonstrate how some artists choose to represent grief through the human figure or symbolic imagery.
+          </p>
+
+          <p>
+            Other works in the exhibition extend beyond traditional art forms. <em>Chandelier of Grief</em> by Yayoi Kusama uses mirrors and repeated light to suggest that beauty and sadness can exist at the same time. The illumination that reflects across the room offers the idea that hope can still remain even in periods of darkness. Patricia Belli’s <em>Maraña (Tangled)</em> addresses ecological grief, bringing to light the fear of future generations that will face the consequences of climate change caused by pollution. <em>Tears</em> by Kay WalkingStick combines personal and collective forms of grief by incorporating the death of her husband and the historical pain experienced by Indigenous communities.
+          </p>
+
+          <p>
+            Through paintings and installations, <em>Stages of Grief</em> indicates that grief does not follow one predictable sequence or that it can be overcome within a specific amount of time. Instead, it is presented as a feeling in which you can experience sadness, anger, guilt, and hope, all at once.
+          </p>
+
+          <p>
+            By placing different forms of depicting grief alongside one another, the exhibition emphasizes how it is a shared human experience. It offers viewers reassurance, serving as a reminder that they are never alone in their grief, even if it feels isolating.
+          </p>
+
+        </div>
+
+      </section>
+
+    </section>
+
+    <!-- ARTWORKS SECTION -->
+
+    <section class="artworks-section" id="artworks">
+
+      <h2 class="section-title">Artworks</h2>
+
+      <p class="audio-instruction">
+        Play audio before reading!
+      </p>
+
+      <p class="audio-description">
+        The audio playing right now is a piano cover to
+        "Unopened Windows" by Cody Carson, lead singer of
+        Set It Off, based on his grief from losing his dad
+        from cancer.
+      </p>
+
+      <!-- AUDIO PLAYER -->
+
+      <div class="music-player">
+
+        <audio id="backgroundMusic" loop preload="none">
+          <source
+            src="Website Audio/Set It Off - Unopened.mp3"
+            type="audio/mpeg">
+        </audio>
+
+        <button id="musicButton" type="button">
+          Play Exhibition Audio
+        </button>
+
       </div>
 
-      <div class="repeat-title" aria-hidden="true">
-        Stages of Grief
-      </div>
+      <!-- ARTWORK 1: JOZEF ISRAËLS -->
 
-      <div class="repeat-title" aria-hidden="true">
-        Stages of Grief
-      </div>
+      <article class="artist-row">
 
-    </div>
+        <div class="artist-information">
 
-    <!-- PRESS STATEMENT WITHOUT HEADING -->
+          <h3>Jozef Israëls</h3>
 
-    <section class="press-section" id="press">
+          <h4>The Last Breath</h4>
 
-      <div class="press-text">
+          <p class="artwork-details">
+            1872, Oil on canvas, 44 x 69 1/2 in
+          </p>
+
+          <p class="artist-description">
+            Your paragraph about Jozef Israëls will go here.
+          </p>
+
+        </div>
+
+        <div class="artist-images">
+
+          <img
+            src="Website Images/Jozef Israels_The Last Breath.jpg"
+            alt="The Last Breath by Jozef Israëls"
+            class="painting">
+
+          <img
+            src="Website Images/Jozef Israels.jpg"
+            alt="Portrait of Jozef Israëls"
+            class="artist-portrait">
+
+        </div>
+
+      </article>
+
+      <!-- ARTWORK 2: FRIDA KAHLO -->
+
+      <article class="artist-row reverse">
+
+        <div class="artist-information">
+
+          <h3>Frida Kahlo</h3>
+
+          <h4>The Wounded Deer</h4>
+
+          <p class="artwork-details">
+            1946, Oil on masonite, 8.8 x 12 in
+          </p>
+
+          <p class="artist-description">
+            Your paragraph about Frida Kahlo will go here.
+          </p>
+
+        </div>
+
+        <div class="artist-images">
+
+          <img
+            src="Website Images/Frida Kahlo_Wounded Deer.jpg"
+            alt="The Wounded Deer by Frida Kahlo"
+            class="painting">
+
+          <img
+            src="Website Images/Frida Kahlo.jpg"
+            alt="Portrait of Frida Kahlo"
+            class="artist-portrait">
+
+        </div>
+
+      </article>
+
+      <!-- REMAINING ARTISTS WILL BE ADDED HERE -->
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about-section" id="about">
+
+      <h2 class="about-title">About</h2>
+
+      <div class="about-text">
 
         <p>
-          <em>Stages of Grief</em> is an exhibition that explores the range of ways artists represent loss, pain, and remembrance through their creativity. Curated by Marie Pacis, it features famous artists such as Frida Kahlo, Ilya Repin, Yayoi Kusama, and Vincent van Gogh, as well as Jozef Israëls, Kay WalkingStick, Maxim Vorobiev, and Patricia Belli.
-        </p>
-
-        <p>
-          Grief is often associated with depression, and it is a common assumption that it can be easily overcome with enough time and the right resources, but this does not consider the intense impact it can have on an individual. Through these works, this exhibition considers grief as an experience that does not follow a fixed or universal sequence. We examine how these artists transform difficult experiences into visual forms of emotions.
-        </p>
-
-        <p>
-          This production grows out of the curator’s personal experience of losing their mother at eleven years old. Inspired by Jozef Israëls’ <em>The Last Breath</em>, she became interested in examining the diverse ways artists represent grief. This primary work depicts a scene of mourning and innocence. Frida Kahlo’s <em>The Wounded Deer</em> expresses grief through symbolic transformation, representing herself as a human-deer hybrid that is injured by arrows. <em>Sorrowing Old Man (At Eternity’s Gate)</em> by Vincent van Gogh conveys emotional distress through the old man’s hunched posture and muted colors. Ilya Repin’s <em>Ivan the Terrible and His Son Ivan</em> focuses on portraying grief through guilt and remorse. Maxim Vorobiev’s <em>Oak Fractured by Lightning</em> uses the destruction of a tree as a metaphor for the sudden impact of losing someone. Altogether, these pieces demonstrate how some artists choose to represent grief through the human figure or symbolic imagery.
-        </p>
-
-        <p>
-          Other works in the exhibition extend beyond traditional art forms. <em>Chandelier of Grief</em> by Yayoi Kusama uses mirrors and repeated light to suggest that beauty and sadness can exist at the same time. The illumination that reflects across the room offers the idea that hope can still remain even in periods of darkness. Patricia Belli’s <em>Maraña (Tangled)</em> addresses ecological grief, bringing to light the fear of future generations that will face the consequences of climate change caused by pollution. <em>Tears</em> by Kay WalkingStick combines personal and collective forms of grief by incorporating the death of her husband and the historical pain experienced by Indigenous communities.
-        </p>
-
-        <p>
-          Through paintings and installations, <em>Stages of Grief</em> indicates that grief does not follow one predictable sequence or that it can be overcome within a specific amount of time. Instead, it is presented as a feeling in which you can experience sadness, anger, guilt, and hope, all at once.
-        </p>
-
-        <p>
-          By placing different forms of depicting grief alongside one another, the exhibition emphasizes how it is a shared human experience. It offers viewers reassurance, serving as a reminder that they are never alone in their grief, even if it feels isolating.
+          Your completed curatorial statement will go here.
         </p>
 
       </div>
@@ -262,6 +625,38 @@
     </section>
 
   </main>
+
+  <!-- AUDIO JAVASCRIPT -->
+
+  <script>
+
+    const music = document.getElementById("backgroundMusic");
+    const musicButton = document.getElementById("musicButton");
+
+    music.volume = 0.5;
+    music.loop = true;
+
+    musicButton.addEventListener("click", async () => {
+
+      if(music.paused){
+
+        try{
+          await music.play();
+          musicButton.textContent = "Pause Exhibition Audio";
+        }
+        catch(error){
+          musicButton.textContent = "Unable to Play Audio";
+        }
+
+      }
+      else{
+        music.pause();
+        musicButton.textContent = "Play Exhibition Audio";
+      }
+
+    });
+
+  </script>
 
 </body>
 </html>
