@@ -53,16 +53,13 @@
       position:sticky;
       top:0;
       z-index:100;
-
       display:flex;
       justify-content:center;
       align-items:center;
       gap:45px;
       flex-wrap:wrap;
-
       width:100%;
       padding:18px 20px;
-
       background:rgba(0,0,0,0.55);
       border-bottom:1px solid rgba(255,255,255,0.2);
       backdrop-filter:blur(10px);
@@ -91,7 +88,7 @@
       padding:60px 20px 100px;
     }
 
-    /* TITLE CONTAINER */
+    /* TITLE */
 
     .title-container{
       width:100%;
@@ -100,8 +97,6 @@
       animation:fadeIn 1.2s ease-out forwards;
       margin-bottom:75px;
     }
-
-    /* MAIN TITLE - PURE WHITE */
 
     .main-title{
       font-family:'Great Vibes',cursive;
@@ -112,8 +107,6 @@
       color:#ffffff;
       text-shadow:0 0 15px rgba(255,255,255,0.15);
     }
-
-    /* REPEATING TITLE EFFECT */
 
     .repeat-title{
       font-family:'Great Vibes',cursive;
@@ -145,17 +138,14 @@
       width:100%;
       max-width:850px;
       padding:50px;
-
       background:rgba(0,0,0,0.65);
       border:1px solid rgba(255,255,255,0.15);
       backdrop-filter:blur(8px);
-
       opacity:0;
       animation:fadeIn 1.2s ease-out forwards;
     }
 
     .press-text{
-      font-family:'Cormorant Garamond',serif;
       font-size:1.3rem;
       line-height:1.9;
       color:#eeeeee;
@@ -175,7 +165,6 @@
     .artworks-section{
       width:100%;
       padding:100px 35px;
-
       background:
         linear-gradient(
           rgba(0,0,0,0.35),
@@ -237,12 +226,10 @@
       width:100%;
       max-width:1200px;
       margin:0 auto 100px;
-
       display:grid;
       grid-template-columns:1fr 1.4fr;
       gap:45px;
       align-items:center;
-
       padding:35px;
       background:rgba(0,0,0,0.55);
       border:1px solid rgba(255,255,255,0.12);
@@ -310,7 +297,6 @@
     .about-section{
       width:100%;
       padding:100px 25px;
-
       background:
         linear-gradient(
           rgba(0,0,0,0.15),
@@ -332,10 +318,8 @@
       max-width:850px;
       margin:auto;
       padding:45px;
-
       background:rgba(0,0,0,0.65);
       border:1px solid rgba(255,255,255,0.15);
-
       font-size:1.3rem;
       line-height:1.9;
     }
@@ -351,7 +335,6 @@
         opacity:0;
         transform:translateY(20px);
       }
-
       to{
         opacity:1;
         transform:translateY(0);
@@ -361,7 +344,6 @@
     /* MOBILE RESPONSIVENESS */
 
     @media(max-width:900px){
-
       .homepage{
         padding:45px 15px 70px;
       }
@@ -403,10 +385,7 @@
       }
     }
 
-    /* ACCESSIBILITY */
-
     @media(prefers-reduced-motion:reduce){
-
       html{
         scroll-behavior:auto;
       }
@@ -437,36 +416,17 @@
 
     <section class="homepage" id="home">
 
-      <!-- EXHIBITION TITLE -->
-
       <div class="title-container">
-
-        <h1 class="main-title">
-          Stages of Grief
-        </h1>
-
-        <div class="repeat-title" aria-hidden="true">
-          Stages of Grief
-        </div>
-
-        <div class="repeat-title" aria-hidden="true">
-          Stages of Grief
-        </div>
-
-        <div class="repeat-title" aria-hidden="true">
-          Stages of Grief
-        </div>
-
-        <div class="repeat-title" aria-hidden="true">
-          Stages of Grief
-        </div>
-
+        <h1 class="main-title">Stages of Grief</h1>
+        <div class="repeat-title" aria-hidden="true">Stages of Grief</div>
+        <div class="repeat-title" aria-hidden="true">Stages of Grief</div>
+        <div class="repeat-title" aria-hidden="true">Stages of Grief</div>
+        <div class="repeat-title" aria-hidden="true">Stages of Grief</div>
       </div>
 
       <!-- PRESS STATEMENT -->
 
       <section class="press-section" id="press">
-
         <div class="press-text">
 
           <p>
@@ -494,7 +454,6 @@
           </p>
 
         </div>
-
       </section>
 
     </section>
@@ -510,36 +469,26 @@
       </p>
 
       <p class="audio-description">
-        The audio playing right now is a piano cover to
-        "Unopened Windows" by Cody Carson, lead singer of
-        Set It Off, based on his grief from losing his dad
-        from cancer.
+        This is a piano cover of “Unopened Windows,” a song written by Cody Carson, the lead singer of Set It Off, who based this on his experience from losing his father to cancer. The song became a source of comfort since I related to the lyrics as someone who also lost a parent.
       </p>
 
       <!-- AUDIO PLAYER -->
 
       <div class="music-player">
-
         <audio id="backgroundMusic" loop preload="none">
-          <source
-            src="Website Audio/Set It Off - Unopened.mp3"
-            type="audio/mpeg">
+          <source src="Website Audio/Set It Off - Unopened.mp3" type="audio/mpeg">
         </audio>
 
         <button id="musicButton" type="button">
           Play Exhibition Audio
         </button>
-
       </div>
 
-      <!-- ARTWORK 1: JOZEF ISRAËLS -->
+      <!-- JOZEF ISRAËLS -->
 
       <article class="artist-row">
-
         <div class="artist-information">
-
           <h3>Jozef Israëls</h3>
-
           <h4>The Last Breath</h4>
 
           <p class="artwork-details">
@@ -547,35 +496,21 @@
           </p>
 
           <p class="artist-description">
-            Your paragraph about Jozef Israëls will go here.
+            This is the main artwork that inspired the theme of this exhibition. The painting portrays a woman leaning over the body of a pale man, while an older woman tends to two children who are too young to understand the concept of death. I felt a personal connection to this piece because it reminded me of when I lost my mother. At the time, I was not that affected by her death, I continued to play my games and went along my life as if nothing happened. I witnessed everyone around me in tears, but the grief didn't get to me until years later.
           </p>
-
         </div>
 
         <div class="artist-images">
-
-          <img
-            src="Website Images/Jozef Israels_The Last Breath.jpg"
-            alt="The Last Breath by Jozef Israëls"
-            class="painting">
-
-          <img
-            src="Website Images/Jozef Israels.jpg"
-            alt="Portrait of Jozef Israëls"
-            class="artist-portrait">
-
+          <img src="Website Images/Jozef Israels_The Last Breath.jpg" alt="The Last Breath by Jozef Israëls" class="painting">
+          <img src="Website Images/Jozef Israels.jpg" alt="Portrait of Jozef Israëls" class="artist-portrait">
         </div>
-
       </article>
 
-      <!-- ARTWORK 2: FRIDA KAHLO -->
+      <!-- FRIDA KAHLO -->
 
       <article class="artist-row reverse">
-
         <div class="artist-information">
-
           <h3>Frida Kahlo</h3>
-
           <h4>The Wounded Deer</h4>
 
           <p class="artwork-details">
@@ -583,45 +518,160 @@
           </p>
 
           <p class="artist-description">
-            Your paragraph about Frida Kahlo will go here.
+            This painting was created during the time Kahlo experienced difficulty in walking. She depicts herself as a half human-half animal hybrid, with lots of arrows piercing her. Kahlo expresses her grief not through a literal sense, but through symbolic imagery and references that represents the constant pain she endured.
           </p>
-
         </div>
 
         <div class="artist-images">
-
-          <img
-            src="Website Images/Frida Kahlo_Wounded Deer.jpg"
-            alt="The Wounded Deer by Frida Kahlo"
-            class="painting">
-
-          <img
-            src="Website Images/Frida Kahlo.jpg"
-            alt="Portrait of Frida Kahlo"
-            class="artist-portrait">
-
+          <img src="Website Images/Frida Kahlo_Wounded Deer.jpg" alt="The Wounded Deer by Frida Kahlo" class="painting">
+          <img src="Website Images/Frida Kahlo.jpg" alt="Portrait of Frida Kahlo" class="artist-portrait">
         </div>
-
       </article>
 
-      <!-- REMAINING ARTISTS WILL BE ADDED HERE -->
+      <!-- YAYOI KUSAMA -->
+
+      <article class="artist-row">
+        <div class="artist-information">
+          <h3>Yayoi Kusama</h3>
+          <h4>Chandelier of Grief</h4>
+
+          <p class="artwork-details">
+            2016, Steel, aluminum, one-way mirror, acrylic, chandelier, motor, plastic, LED
+          </p>
+
+          <p class="artist-description">
+            Installed in a dark room filled with infinity mirrors, the chandelier reflects repeatedly, creating an illusion of an endless stream of light. The work suggests that you can experience beauty and sadness at the same time, I interpret its light as a symbol of hope. Rather than depicting grief in a sorrowful way, Kusama's work indicates that moments of beauty can continue to exist even in the darkness.
+          </p>
+        </div>
+
+        <div class="artist-images">
+          <img src="Website Images/Yayoi Kusama_Chandelier of Grief.jpg" alt="Chandelier of Grief by Yayoi Kusama" class="painting">
+          <img src="Website Images/Yayoi Kusama.jpg" alt="Portrait of Yayoi Kusama" class="artist-portrait">
+        </div>
+      </article>
+
+      <!-- VINCENT VAN GOGH -->
+
+      <article class="artist-row reverse">
+        <div class="artist-information">
+          <h3>Vincent Van Gogh</h3>
+          <h4>Sorrowing Old Man</h4>
+
+          <p class="artwork-details">
+            1890, Oil on canvas, 2'7 x 2'1 in
+          </p>
+
+          <p class="artist-description">
+            Also known as <strong>At Eternity's Gate</strong>, this was created shortly before his death. This is a reference to a drawing called "Worn Out," a war veteran sitting with his head in his hands. Van Gogh associated the man's depressing expression to his belief with God. The figure's portrayal helps communicate the artist's emotional exhaustion.
+          </p>
+        </div>
+
+        <div class="artist-images">
+          <img src="Website Images/Vincent Van Gogh_Sorrowing Old Man.jpg" alt="Sorrowing Old Man by Vincent Van Gogh" class="painting">
+          <img src="Website Images/Vincent Van Gogh.jpg" alt="Portrait of Vincent Van Gogh" class="artist-portrait">
+        </div>
+      </article>
+
+      <!-- MAXIM NIKIFOROVICH VOROBIEV -->
+
+      <article class="artist-row">
+        <div class="artist-information">
+          <h3>Maxim Nikiforovich Vorobiev</h3>
+          <h4>Oak Fractured By Lightning</h4>
+
+          <p class="artwork-details">
+            1842, Oil on canvas, 100 x 130 cm
+          </p>
+
+          <p class="artist-description">
+            On the surface, it appears to be an ordinary landscape painting, but this scene is an allegory of personal loss. This artwork was created as a response to the death of Vorobiev's wife, he indirectly communicates his grief through nature--showing the destructive and instability side to it.
+          </p>
+        </div>
+
+        <div class="artist-images">
+          <img src="Website Images/Maxim Vorobiev_Oak Fractured by Lightning.jpg" alt="Oak Fractured By Lightning by Maxim Vorobiev" class="painting">
+          <img src="Website Images/Maxim Vorobiev.jpg" alt="Portrait of Maxim Vorobiev" class="artist-portrait">
+        </div>
+      </article>
+
+      <!-- PATRICIA BELLI -->
+
+      <article class="artist-row reverse">
+        <div class="artist-information">
+          <h3>Patricia Belli</h3>
+          <h4>Maraña (Tangle)</h4>
+
+          <p class="artwork-details">
+            2024, Driftwood, plastic, animal bones, springs, cables
+          </p>
+
+          <p class="artist-description">
+            According to the art label, Belli created this installation in the wake of her sister's death from bone cancer. She also connects this work to her hopelessness over protecting future generations from the effects of climate change. Belli demonstrates how grief can also extend beyond the individual by combining ecological grief with personal mourning.
+          </p>
+        </div>
+
+        <div class="artist-images">
+          <img src="Website Images/Patricia Belli_Marana.jpg" alt="Maraña by Patricia Belli" class="painting">
+          <img src="Website Images/Patricia Belli.jpg" alt="Portrait of Patricia Belli" class="artist-portrait">
+        </div>
+      </article>
+
+      <!-- ILYA REPIN -->
+
+      <article class="artist-row">
+        <div class="artist-information">
+          <h3>Ilya Repin</h3>
+          <h4>Ivan The Terrible and His Son Ivan</h4>
+
+          <p class="artwork-details">
+            1883-1885, Oil on canvas, 78.5 x 100 in
+          </p>
+
+          <p class="artist-description">
+            Unlike the other artworks which are based more on the artist's experience, this presents grief through a historical narrative. Based on the traditional account that Ivan the Terrible struck his son during an argument, the painting focuses more on the aftermath rather than the violence. His wide-eyed expression, the desperation and remorse in his embrace as he holds his dying son. Through this work, Repin reminds us that grief is inseparable from guilt and regret.
+          </p>
+        </div>
+
+        <div class="artist-images">
+          <img src="Website Images/Ilya Repin_Ivan the Terrible and His Son Ivan.jpg" alt="Ivan The Terrible and His Son Ivan by Ilya Repin" class="painting">
+          <img src="Website Images/Ilya Repin.jpg" alt="Portrait of Ilya Repin" class="artist-portrait">
+        </div>
+      </article>
+
+      <!-- KAY WALKINGSTICK -->
+
+      <article class="artist-row reverse">
+        <div class="artist-information">
+          <h3>Kay WalkingStick</h3>
+          <h4>Tears</h4>
+
+          <p class="artwork-details">
+            1990, Deer hide, cow hide, copper, wood, feathers, bone, beads, corn, stones, turquoise, and Anasazi potsherds
+          </p>
+
+          <p class="artist-description">
+            Modeled after a funerary scaffold, this piece combines personal grief, as well as reflecting on the genocide that Indigenous people experienced in "the area that we now call the United States." She connects the work to the death of her husband by using a shirt he made for him as a bundle that sits on top of the scaffold. WalkingStick shows how personal and historical grief can overlap.
+          </p>
+        </div>
+
+        <div class="artist-images">
+          <img src="Website Images/Kay Walkingstick_On Tears.jpg" alt="Tears by Kay WalkingStick" class="painting">
+          <img src="Website Images/Kay Walkingstick.jpg" alt="Portrait of Kay WalkingStick" class="artist-portrait">
+        </div>
+      </article>
 
     </section>
 
     <!-- ABOUT SECTION -->
 
     <section class="about-section" id="about">
-
       <h2 class="about-title">About</h2>
 
       <div class="about-text">
-
         <p>
           Your completed curatorial statement will go here.
         </p>
-
       </div>
-
     </section>
 
   </main>
@@ -629,17 +679,14 @@
   <!-- AUDIO JAVASCRIPT -->
 
   <script>
-
     const music = document.getElementById("backgroundMusic");
     const musicButton = document.getElementById("musicButton");
 
-    music.volume = 0.5;
+    music.volume = 0.25;
     music.loop = true;
 
     musicButton.addEventListener("click", async () => {
-
       if(music.paused){
-
         try{
           await music.play();
           musicButton.textContent = "Pause Exhibition Audio";
@@ -647,15 +694,12 @@
         catch(error){
           musicButton.textContent = "Unable to Play Audio";
         }
-
       }
       else{
         music.pause();
         musicButton.textContent = "Play Exhibition Audio";
       }
-
     });
-
   </script>
 
 </body>
