@@ -160,6 +160,36 @@
       margin-bottom:0;
     }
 
+    /* EXHIBITION POSTER */
+
+    .poster-section{
+      width:100%;
+      max-width:850px;
+      margin-top:70px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .poster-image{
+      display:block;
+      width:100%;
+      max-width:550px;
+      height:auto;
+      border:1px solid rgba(255,255,255,0.2);
+      box-shadow:0 0 25px rgba(0,0,0,0.45);
+      transition:transform 0.3s ease;
+    }
+
+    .poster-image:hover{
+      transform:scale(1.02);
+    }
+
+    @media(max-width:700px){
+      .poster-section{margin-top:45px;}
+      .poster-image{max-width:100%;}
+    }
+
     /* ARTWORKS SECTION */
 
     .artworks-section{
@@ -456,6 +486,13 @@
         </div>
       </section>
 
+      <!-- EXHIBITION POSTER -->
+      <section class="poster-section" aria-label="Exhibition poster">
+        <img src="Website Images/Stages of Grief Poster.PNG"
+             alt="Stages of Grief exhibition poster"
+             class="poster-image">
+      </section>
+
     </section>
 
     <!-- ARTWORKS SECTION -->
@@ -655,7 +692,7 @@
         </div>
 
         <div class="artist-images">
-          <img src="Website Images/Kay WalkingStick_Tears.jpg" alt="Tears by Kay WalkingStick" class="painting">
+          <img src="Website Images/Kay Walkingstick_Tears.jpg" alt="Tears by Kay WalkingStick" class="painting">
           <img src="Website Images/Kay Walkingstick.jpg" alt="Portrait of Kay WalkingStick" class="artist-portrait">
         </div>
       </article>
@@ -669,7 +706,39 @@
 
       <div class="about-text">
         <p>
-          Your completed curatorial statement will go here.
+          Grief—an emotion that everyone experiences, whether it’s as little as losing your favorite pair of headphones (true story-), or as impactful as losing a loved one. We have all felt guilt in our own shape and form. For many individuals, they are able to develop ways to cope with their grief with time. However, its lasting effects are often overlooked as society frequently resumes to their daily life as the world moves forward even after a traumatic event. For majority of artists, art has become a form of release, a way to process thoughts and emotions without having to worry about presenting them in a certain narrative. In this exhibition, <em>Stages of Grief</em>, we explore the different ways artists express their own personal interpretation of loss and mourning.
+        </p>
+
+        <p>
+          Jozef Israëls’ <em>The Last Breath</em> is the main artwork that gave me the inspiration for the theme of the exhibition. Israëls depicts a death scene—on the left side of the painting, a woman leans over a pale body. On the right, an older woman tends to two children as light enters through the window, emphasizing their innocence and separation from the grief that is occurring next to them. I felt a personal connection to this piece as I lost my mother at a young age. After she died, people around me openly expressed their sadness, but I continued to play with my toys and spend time with my friends as though nothing happened. The older woman shielding the children reminds me of the way my family protected me from the incident so that I still maintained a sense of happiness. The impact of her death didn’t occur to me until years later when I learned the truth on how she died, a decade later after she passed. This deepens my connection to the piece as it perfectly demonstrates how grief can affect someone differently based on their age and emotional awareness.
+        </p>
+
+        <p>
+          <em>The Wounded Deer</em> by Frida Kahlo was created around the time period she experienced ongoing health problems from a bus accident she experienced at eighteen. This incident left her with chronic back pain and difficulty in walking. Around the time this painting was created, she received spinal surgery to address the issue, however it left her bedridden for almost a year. She creates a self-portrait of this event by depicting herself as a half-human, half-animal hybrid, combining her face with the body of a deer that is being pierced by nine arrows. Despite the injuries, Kahlo’s stoic expression suggests that she refuses to let suffering overwhelm her. I chose this work as it shows the artist’s distinct style and personal interpretation of living with pain, while also confronting it.
+        </p>
+
+        <p>
+          I have been a fan of Yayoi Kusama’s art for a long time. The first time I heard of her was through art history class in high school, and I became interested in her installation work. One of those works was <em>Chandelier of Grief</em>, an installation that consists of a dark room that is lined with infinity mirrors, which is one of the art forms Kusama is known for, and a chandelier’s light is reflected repeatedly, creating an illusion of a field of light. Although there is little information about the piece itself, and my only exposure to it is through photographs, I was still able to develop a connection with the art. The repetition of light within the darkness serves as a reminder that beauty and sadness can exist together. For me, this work offers a comforting reminder that even in a dark world, small sources of light still remain.
+        </p>
+
+        <p>
+          One of the first artists I studied after deciding to take art more seriously was Vincent van Gogh. He is best known for <em>The Starry Night</em>, but also experienced recurring mental-health issues that greatly impacted his life and artworks. When browsing into his collection, <em>Sorrowing Old Man</em>, otherwise known as <em>At Eternity’s Gate</em>, immediately caught my eye. From the painting’s muted colors to the hunched old man, they gave a sense of intense emotional exhaustion. Created during the last few months of van Gogh’s life, this image draws attention to the severity of mental illness that some individuals face. I chose this artwork to spread awareness and encourage audiences to recognize that grief can have serious effects, regardless of time. It is important to me to highlight the need for greater sympathy and support for individuals whose pain may not be visible.
+        </p>
+
+        <p>
+          I first learned about Maxim Vorobiev’s <em>Oak Fractured by Lightning</em> through a class exercise in high school. My professor would present the class with an unfamiliar artwork, and he asked us to create a visual analysis based on it. I learned that the artist created this painting after the death of his wife, expressing his pain as the lightning strikes the oak tree. Some art historians suggested that the oak symbolizes Vorobiev’s wife, which to me deepens its emotional significance. I’m also fascinated by the way he chose to depict his grief through the destructive force of nature, instead of traditionally portraying human figures.
+        </p>
+
+        <p>
+          Patricia Belli’s <em>Maraña (Tangled)</em> is displayed at the San Jose Museum of Art as a part of the gallery, <em>a small ocean swallowed</em>. She portrays a form of grief that is often overlooked, natural grief. Belli is known for incorporating found materials into her work that evokes personal loss, and this installation shows her concerns that future generations will have to face the consequences of climate change. This work also carried personal significance, as Belli created this in the wake of her sister’s death from bone cancer. Through the installation materials and subject matter, she draws a connection between the harm pollution does to the human body, and the damage it causes to the environment, expanding the meaning of grief beyond personal mourning.
+        </p>
+
+        <p>
+          <em>Ivan the Terrible and His Son Ivan</em> by Ilya Repin is based on the aftermath of a historical rumor in which the Russian Tsar struck his son on the head in the middle of an argument. Repin focuses on Ivan cradling his dying son, his wide-eyed expression displaying shock and guilt as he becomes aware of his actions. This artwork represents the pain of realizing that one’s actions can cause irreversible harm. In this sense, this painting presents grief as guilt and regret. I connect this work with my personal experiences of saying or doing things without thought and instantly feel remorse that I have hurt someone. What I experienced doesn’t compare to the actual tragedy being shown, but it reminds me of how our actions can have lasting emotional consequences.
+        </p>
+
+        <p>
+          What caught my attention to Kay WalkingStick’s <em>Tears</em> is that it brings together two forms of grief, when she lost her first husband and her grief towards her Indigenous ancestors. The sculpture is modeled after a funerary scaffold that is used by Indigenous communities that burn their remains of the dead so that they can return to nature. Created during Columbus Day, WalkingStick reflects over the genocide and cultural loss that Indigenous people experienced. She also incorporated her late husband into the art by using a leather shirt she created for him. This creates a direct connection between her personal grief, along with her broader cultural sadness.
         </p>
       </div>
     </section>
